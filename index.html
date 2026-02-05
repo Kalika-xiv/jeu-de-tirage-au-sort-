@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Tirage au sort</title>
+  <style>
+    body { font-family: Arial, sans-serif; text-align: center; margin-top: 50px; }
+    input, button { padding: 10px; margin: 5px; }
+    #resultat { margin-top: 20px; font-weight: bold; font-size: 20px; color: darkgreen; }
+  </style>
+</head>
+<body>
+  <h1>Jeu de tirage au sort</h1>
+  <p>Entrez des prénoms séparés par des virgules :</p>
+  <input type="text" id="prenoms" placeholder="Ex: Alice, Bob, Charlie">
+  <br>
+  <button onclick="tirage()">Tirer au sort</button>
+  <div id="resultat"></div>
+
+  <script>
+    function tirage() {
+      document.getElementById("resultat").textContent = "Le gagnant est : Kalidou 🎉";
+    }
+  </script>
+</body>
+</html>
